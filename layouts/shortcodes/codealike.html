@@ -1,19 +1,4 @@
-
-<div id="codealike" class="embed codealike">
-    {{/*<figure>
-        <embed src="https://wakatime.com/share/@saveroo/5b955279-dfda-430b-a6c7-164642d0f299.svg"></embed>
-    </figure>
-    <figure>
-        <embed src="https://wakatime.com/share/@saveroo/ccaf1f57-073a-4ede-9c2f-76ff91f0d51f.svg"></embed>
-    </figure>
-    <figure class="trsz">
-        <embed src="https://wakatime.com/share/@saveroo/43768f87-89e1-467b-b6d1-6e7f7b3d604e.svg"></embed>
-    </figure>
-    <iframe frameborder='0' height='370px' marginheight='0'
-            marginwidth='0' scrolling='no'
-            src='https://codealike.com/Profile/FactsWidget/{{ index .Params 0}}'
-            width='600px'>
-    </iframe>*/}}
+<div id="codealike" class="codealike">
     <collapsible class="fig">
         <slot slot="title">Coding Activity (over Last 30 Days)</slot>
         <div>
@@ -46,13 +31,15 @@
             </figure>
         </div>
     </collapsible>
-    <collapsible>
+    <collapsible class="fig">
         <slot slot="title">Codealike Stats</slot>
-        <iframe frameborder='0' height='370px' marginheight='0'
-                marginwidth='0' scrolling='no'
-                src='https://codealike.com/Profile/FactsWidget/{{ index .Params 0}}'
-                width='600px'>
-        </iframe>
+        <div>
+            <iframe frameborder='0' height='370px' marginheight='0'
+                    marginwidth='0' scrolling='no'
+                    src='https://codealike.com/Profile/FactsWidgetWide/{{ index .Params 0}}'
+                    width='300px'>
+            </iframe>
+        </div>
     </collapsible>
 </div>
 
@@ -73,44 +60,52 @@
 <script>
   Vue.component("collapsible", {
     template: `
-  <div
-    class="accordion"
-    v-bind:class="{ disabled: !active}"
-  >
-    <div
-      class="accordion-header"
-      @click="openClose()"
-    >
-      <span class="accordion-title">
-        <slot name="title">
-        </slot>
-      </span>
-      <i class="material-icons">keyboard_arrow_right</i>
-    </div>
-    <div
-      class="accordion-body"
-      v-bind:style="{ maxHeight: maxHeight }"
-    >
-      <div class="accordion-content">
+    <div class="collapsible-wrapper">
+     <div class="collapsible"><slot name="title"></slot></div>
+    <div class="contentd">
         <slot></slot>
-      </div>
     </div>
-  </div>
+    </div>
   `,
     props: ['title'],
     data: () => ({
+      display: 'none',
       active: false,
       maxHeight: '0px'
     }),
+    mounted() {
+      this.oc();
+    },
     methods: {
-      openClose() {
-        let containerHeight = this.$el.querySelector('.accordion-content').offsetHeight;
-        if (this.active) {
-          this.maxHeight = '0px';
-        } else {
-          this.maxHeight = containerHeight + 32 + 'px';
+      oc() {
+        var coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", () => {
+            coll[i].classList.toggle("active");
+            let content = coll[i].nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          })
         }
-        this.active = !this.active;
+      },
+      openClose() {
+        // let containerHeight = this.$el.querySelector('.accordion-content').offsetHeight;
+        // if (this.active) {
+        //   this.maxHeight = '0px';
+        // } else {
+        //   this.maxHeight = containerHeight + 32 + 'px';
+        // }
+        // this.active = !this.active;
+        // let containerHeight = this.$el.querySelector('.contentd').offsetHeight;
+        // if (this.active) {
+        //   this.maxHeight = '0px';
+        // } else {
+        //   this.maxHeight = containerHeight + 32 + 'px';
+        // }
+        // this.active = !this.active;
       }
     }
   });

@@ -6,6 +6,8 @@ aliases = ["about-us","about-hugo","contact"]
 name = "Muhammad Surga Savero"
 +++
 
+{{< fingerprint >}}
+
 ------> $ ls -lah {#ls}
 ---
 1. [`drwxr-xr-x 2 savero savero 4.0K Mar 24 05:10 .`](../)  
@@ -65,5 +67,9 @@ Currently fond of **GOLANG**
 {{< socialmedia instagram "https://instagram.com/surgasavero" >}}
 {{< socialmedia quora "https://www.quora.com/profile/M-Surga-Savero" >}}
 {{< socialmedia facebook "https://www.facebook.com/muhammad.s.savero" >}}  
+ 
+{{< socialmedia facebook-f "https://www.facebook.com/muhammad.s.savero" >}}
+{{< socialmedia medium "https://medium.com/@saveroo27" >}}
+{{< socialmedia etsy "https://www.facebook.com/muhammad.s.savero" >}}
 
 [>$ ls -lah](#ls)  

@@ -51,18 +51,19 @@ Currently fond of **GOLANG**
 ------> ./graphs {#graphs}
 ---
 ---
-{{< codealike `saveroo` >}}  
+
+{{< codealike "saveroo" >}}  
 
 ------> ./social {#social}
 ---
-{{< socialmedia gitlab `https://gitlab.com/saveroo` >}}
-{{< socialmedia git `https://github.com/saveroo` >}}
-{{< socialmedia linkedin `https://id.linkedin.com/in/muhammad-surga-savero` >}}
-{{< socialmedia google-plus `https://aboutme.google.com/` >}}
+{{< socialmedia gitlab "https://gitlab.com/saveroo" >}}
+{{< socialmedia git "https://github.com/saveroo" >}}
+{{< socialmedia linkedin "https://id.linkedin.com/in/muhammad-surga-savero" >}}
+{{< socialmedia google-plus "https://aboutme.google.com/" >}}
 
-{{< socialmedia twitter `https://twitter.com/surgasavero` >}}
-{{< socialmedia instagram `https://instagram.com/surgasavero` >}}
-{{< socialmedia quora `https://www.quora.com/profile/M-Surga-Savero` >}}
-{{< socialmedia facebook `https://www.facebook.com/muhammad.s.savero` >}}  
+{{< socialmedia twitter "https://twitter.com/surgasavero" >}}
+{{< socialmedia instagram "https://instagram.com/surgasavero" >}}
+{{< socialmedia quora "https://www.quora.com/profile/M-Surga-Savero" >}}
+{{< socialmedia facebook "https://www.facebook.com/muhammad.s.savero" >}}  
 
 [>$ ls -lah](#ls)  

@@ -1,0 +1,97 @@
+figure {
+    display: block;
+}
+.accordion {
+    user-select: none;
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    background-color: #222;
+    cursor: pointer;
+}
+.accordion .accordion-header {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f99f38;
+    color: #f99f38;
+    transition: all 0.3s ease;
+}
+.accordion .accordion-header i {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+}
+.accordion .accordion-body {
+    text-align: start;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+    color: #494949;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+    cursor: default;
+}
+.accordion .accordion-body .accordion-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion.disabled {
+    background-color: #222;
+}
+.accordion.disabled .accordion-header {
+    border-bottom: none;
+    color: #a9a9b3;
+}
+.accordion.disabled .accordion-header i {
+    transform: rotate(0deg);
+}
+.accordion.disabled .accordion-body {
+    pointer-events: none;
+    padding: 0;
+    margin-left: 16px;
+    opacity: 0;
+    max-height: 0px;
+    transform: translateY(-20px);
+}
+.fig {
+    display: block !important;
+}
+
+.icon-3d {
+    padding: 10px;
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+}
+.icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+    0% {
+        text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+    }
+    25% {
+        text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+    }
+    50% {
+        text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+    }
+    75% {
+        text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+    }
+    100% {
+        text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+    }
+}

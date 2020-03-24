@@ -1,0 +1,117 @@
+
+<div id="codealike" class="embed codealike">
+    {{/*<figure>
+        <embed src="https://wakatime.com/share/@saveroo/5b955279-dfda-430b-a6c7-164642d0f299.svg"></embed>
+    </figure>
+    <figure>
+        <embed src="https://wakatime.com/share/@saveroo/ccaf1f57-073a-4ede-9c2f-76ff91f0d51f.svg"></embed>
+    </figure>
+    <figure class="trsz">
+        <embed src="https://wakatime.com/share/@saveroo/43768f87-89e1-467b-b6d1-6e7f7b3d604e.svg"></embed>
+    </figure>
+    <iframe frameborder='0' height='370px' marginheight='0'
+            marginwidth='0' scrolling='no'
+            src='https://codealike.com/Profile/FactsWidget/{{ index .Params 0}}'
+            width='600px'>
+    </iframe>*/}}
+    <collapsible class="fig">
+        <slot slot="title">Coding Activity</slot>
+        <div>
+            <figure>
+                <embed src="https://wakatime.com/share/@saveroo/5b955279-dfda-430b-a6c7-164642d0f299.svg"></embed>
+            </figure>
+        </div>
+    </collapsible>
+    <collapsible class="fig">
+        <slot slot="title">Languages</slot>
+        <div>
+            <figure>
+                <embed src="https://wakatime.com/share/@saveroo/ccaf1f57-073a-4ede-9c2f-76ff91f0d51f.svg"></embed>
+            </figure>
+        </div>
+    </collapsible>
+    <collapsible class="fig">
+        <slot slot="title">Editor</slot>
+        <div>
+            <figure>
+                <embed src="https://wakatime.com/share/@saveroo/43768f87-89e1-467b-b6d1-6e7f7b3d604e.svg"></embed>
+            </figure>
+        </div>
+    </collapsible>
+    <collapsible>
+        <slot slot="title">Codealike Stats</slot>
+        <iframe frameborder='0' height='370px' marginheight='0'
+                marginwidth='0' scrolling='no'
+                src='https://codealike.com/Profile/FactsWidget/{{ index .Params 0}}'
+                width='600px'>
+        </iframe>
+    </collapsible>
+</div>
+
+<script>
+  window.quasarConfig = {
+    brand: { // this will NOT work on IE 11
+      // primary: '#e46262',
+      // ... or all other brand colors
+    },
+    // notify: {...}, // default set of options for Notify Quasar plugin
+    // loading: {...}, // default set of options for Loading Quasar plugin
+    // loadingBar: { ... }, // settings for LoadingBar Quasar plugin
+    // ..and many more (check Installation card on each Quasar component/directive/plugin)
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.9.11/dist/quasar.umd.min.js"></script>
+<script>
+  Vue.component("collapsible", {
+    template: `
+  <div
+    class="accordion"
+    v-bind:class="{ disabled: !active}"
+  >
+    <div
+      class="accordion-header"
+      @click="openClose()"
+    >
+      <span class="accordion-title">
+        <slot name="title">
+        </slot>
+      </span>
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
+    <div
+      class="accordion-body"
+      v-bind:style="{ maxHeight: maxHeight }"
+    >
+      <div class="accordion-content">
+        <slot></slot>
+      </div>
+    </div>
+  </div>
+  `,
+    props: ['title'],
+    data: () => ({
+      active: false,
+      maxHeight: '0px'
+    }),
+    methods: {
+      openClose() {
+        let containerHeight = this.$el.querySelector('.accordion-content').offsetHeight;
+        if (this.active) {
+          this.maxHeight = '0px';
+        } else {
+          this.maxHeight = containerHeight + 32 + 'px';
+        }
+        this.active = !this.active;
+      }
+    }
+  });
+  new Vue({
+    el: '#codealike',
+    data: function () {
+      return {}
+    },
+    methods: {},
+    // ...etc
+  })
+</script>

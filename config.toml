@@ -22,11 +22,11 @@ publishDir   = "public"
 
 buildDrafts  = false
 buildFuture  = false
-buildExpored = false
+buildExpored = true
 canonifyURLs = true
 
 enableRobotsTXT = true
-enableGitInfo   = false
+enableGitInfo   = true
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
 disableRSS     = false
@@ -58,7 +58,7 @@ disableHugoGeneratorInject = false
   keywords = "vue, react, native, frontend, backend, developer, engineer"
   images = [""]
 
-  homeSubtitle = "Hello Friend"
+  homeSubtitle = "Muhammad Surga Savero"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
@@ -99,23 +99,23 @@ disableHugoGeneratorInject = false
     theme = "#252627"
 
   [params.logo]
-    logoText     = "$ cd /home/"
+    logoText     = "$ cd ~/home"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
     # logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
+    # logoCursorAnimate  = "1s"
 
   # Social icons
   [[params.social]]
     name = "twitter"
     url  = "https://twitter.com/surgasavero"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:saveroo27@gmail.com"
+#  [[params.social]]
+#    name = "email"
+#    url  = "mailto:saveroo27@gmail.com"
 
   [[params.social]]
     name = "github"
@@ -125,9 +125,10 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "https://www.linkedin.com/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+#  [[params.social]]
+#    name = "instagram"
+#    url  = "https://www.linkedin.com/"
+
 
 [languages]
   [languages.en]
@@ -135,17 +136,16 @@ disableHugoGeneratorInject = false
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-  [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
+    identifier = "self"
+    name       = "./self"
     url        = "about/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
+    identifier = "scratch"
+    name       = "./scratch"
     url        = "posts/"
+  [[menu.main]]
+    identifier = "dev"
+    name       = "./dev"
+    url        = "dev/"

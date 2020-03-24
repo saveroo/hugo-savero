@@ -1,15 +1,18 @@
----
-title: "Hello friends.."
-date: 2020-03-24T04:52:47+07:00
-aliases: ["about-us","about-hugo","contact"]
-name: "Muhammad Surga Savero"
----
++++
+title = "./self.sh"
+date = 2020-03-24T04:52:47+07:00
+aliases = ["about-us","about-hugo","contact"]
+[author]
+name = "Muhammad Surga Savero"
++++
 
-[`drwxr-xr-x 2 savero savero 4.0K Mar 24 05:10 .`](../)  
-[`drwxr-xr-x 3 savero savero 4.0K Mar 24 00:02 ..`]()  
-[`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 social.md`](#social)  
-[`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 intro.md`](#intro)  
-[`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 graphs.md`](#graphs)  
+------> $ ls -lah {#ls}
+---
+1. [`drwxr-xr-x 2 savero savero 4.0K Mar 24 05:10 .`](../)  
+2. [`drwxr-xr-x 3 savero savero 4.0K Mar 24 00:02 ..`]()  
+3. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 intro.md`](#intro)  
+4. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 social.md`](#social)  
+5. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 graphs.md`](#graphs)  
 
 ------> ./intro {#intro}
 ---
@@ -39,6 +42,10 @@ to create such intricate way to fool the game, and not wasting my time in a delu
 - **Familiar with:** 
     - Java
 
+- **SysAdmin/DevOps**
+    - Arch/Ubuntu/CoreOS/CentOS
+    - Docker/Kubernetes
+
 Currently fond of **GOLANG**
 
 ------> ./graphs {#graphs}
@@ -56,4 +63,6 @@ Currently fond of **GOLANG**
 {{< socialmedia twitter `https://twitter.com/surgasavero` >}}
 {{< socialmedia instagram `https://instagram.com/surgasavero` >}}
 {{< socialmedia quora `https://www.quora.com/profile/M-Surga-Savero` >}}
-{{< socialmedia facebook `https://www.facebook.com/muhammad.s.savero` >}}
+{{< socialmedia facebook `https://www.facebook.com/muhammad.s.savero` >}}  
+
+[>$ ls -lah](#ls)  

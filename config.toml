@@ -71,6 +71,9 @@ disableHugoGeneratorInject = false
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   customCSS = [
   "/css/styles.css",
+  "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css",
+#  "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css",
+#  "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
   "https://fonts.googleapis.com/icon?family=Material+Icons",
   "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons",
   "https://use.fontawesome.com/releases/v5.0.13/css/all.css",
@@ -78,7 +81,9 @@ disableHugoGeneratorInject = false
 #  "https://cdn.jsdelivr.net/npm/quasar@1.9.11/dist/quasar.min.css"
   ]
   customJS  = [
-#  "https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js",
+  "/js/prism.js",
+#  "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
+  "https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js",
 #  "https://cdn.jsdelivr.net/npm/quasar@1.9.11/dist/quasar.umd.min.js",
 #  "https://cdn.jsdelivr.net/npm/quasar@1.9.11/dist/icon-set/fontawesome-v5.umd.min.js"
   ]

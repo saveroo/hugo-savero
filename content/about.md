@@ -6,15 +6,13 @@ aliases = ["about-us","about-hugo","contact"]
 name = "Muhammad Surga Savero"
 +++
 
-{{< fingerprint >}}
-
 ------> $ ls -lah {#ls}
 ---
-1. [`drwxr-xr-x 2 savero savero 4.0K Mar 24 05:10 .`](../)  
-2. [`drwxr-xr-x 3 savero savero 4.0K Mar 24 00:02 ..`]()  
-3. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 intro.md`](#intro)  
-4. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 social.md`](#social)  
-5. [`drwxr-xr-x 1 savero savero 4.0K Mar 24 00:03 graphs.md`](#graphs)  
+[`dx-x-x 2 svr root 4K .`](../)  
+[`dx-x-x 3 svr root 4K ..`]()  
+[`dx-x-x 1 svr root 4K intro.md`](#intro)  
+[`dx-x-x 1 svr root 4K social.md`](#social)  
+[`dx-x-x 1 svr root 4K graphs.md`](#graphs)  
 
 ------> ./intro {#intro}
 ---
@@ -36,19 +34,20 @@ to create such intricate way to fool the game, and not wasting my time in a delu
     - Javascript / Vue (Quasar Framework)
 - **Experienced with:**
     - Node / React
-    - Laravel/RoR
+    - Laravel / RoR
     - Delphi RAD (Since Borland to XE)
     - Bash/Shell
-    - C#
-    - Strapi
+    - C# (Entity Framework) / Mono 
+    - Express/Strapi/Feather/Moleculer
 - **Familiar with:** 
     - Java
+    - Python
 
 - **SysAdmin/DevOps**
     - Arch/Ubuntu/CoreOS/CentOS
     - Docker/Kubernetes
 
-Currently fond of **GOLANG**
+Currently fond of **GO LANG**
 
 ------> ./graphs {#graphs}
 ---
@@ -69,7 +68,7 @@ Currently fond of **GOLANG**
 {{< socialmedia facebook "https://www.facebook.com/muhammad.s.savero" >}}  
  
 {{< socialmedia facebook-f "https://www.facebook.com/muhammad.s.savero" >}}
-{{< socialmedia medium "https://medium.com/@saveroo27" >}}
+{{< socialmedia medium-m "https://medium.com/@saveroo27" >}}
 {{< socialmedia etsy "https://www.facebook.com/muhammad.s.savero" >}}
 
 [>$ ls -lah](#ls)  

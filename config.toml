@@ -155,3 +155,11 @@ disableHugoGeneratorInject = false
     identifier = "dev"
     name       = "./dev"
     url        = "dev/"
+  [[menu.main]]
+    identifier = "services"
+    name       = "./services"
+    url        = "services/"
+  [[menu.main]]
+    identifier = "pub"
+    name       = "./pub"
+    url        = "pub/"

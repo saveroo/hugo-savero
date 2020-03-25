@@ -1,0 +1,41 @@
+<div id="gists">
+    <div class="">
+        <div class="my-gist-card" v-for="(gist, i) in gists" :key="i">
+            <div class="my-gist-card-content">
+                <div style="display:inline-block">
+                    <img width="30" height="30"
+                         :src="gist.owner.avatar_url" alt="@saveroo">
+                </div>
+                <div style="display:inline-block">
+                    <a style="text-decoration: none; color: #fe5186" :href="gist.git_pull_url">
+                        <% gist.owner.login %>
+                    </a>/
+                    <ul v-for="(file, fi) in gist.files" :key="555+fi">
+                        <li>
+                            <a class="icon-3d" @click="getG(gist, gist.id, file.filename, 555+fi)">
+                                <% file.filename %>
+                            </a>
+                        </li>
+                    </ul>
+                    |
+                    <span><% Object.keys(gist.files).length %> files</span>
+                </div>
+                <% gist_filename %>
+                <pre><% gist.description %></pre>
+                <div v-for="(file, fi) in gist.files" :key="555+fi">
+                    <div v-if="gist_index === 555+fi" class="highlight">
+                        <get-gist :gist="`${gist.owner.login}/${gist.id}`" :file="file.filename" />
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="/js/getGist.js">
+</script>

@@ -58,7 +58,7 @@ disableHugoGeneratorInject = false
   # Metadata mostly used in document's head
   description = "Muhammad Surga Savero"
   keywords = "vue, react, native, frontend, backend, developer, engineer"
-  images = [""]
+  images = ["s.png"]
 
   homeSubtitle = "Muhammad Surga Savero"
 

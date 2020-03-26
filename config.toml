@@ -12,7 +12,7 @@ PygmentsStyle = "monokai"
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-# googleAnalytics = ""
+ googleAnalytics = "G-R0NQ6E8J7N"
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
@@ -63,6 +63,8 @@ disableHugoGeneratorInject = false
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
+  hotJar = true
+  hotJarID = 1743144
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false

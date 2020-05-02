@@ -1,0 +1,52 @@
+{{/*<i class="simpleicons" title="Hugo" style="color: #FF4088;"></i>*/}}
+<span id="v-simpleicon{{ seq 999 | shuffle | first 1 }}">
+    {{ $url := "simpleicon2.json" }}
+    {{ $icons := index .Params 0 }}
+    {{ $icons2 := index .Params 1 }}
+    {{ $json := getJSON $.Site.BaseURL . $url }}
+    {{ range $json }}
+        {{ $test := printf "%s.svg" $icons}}
+        {{ $test2 := printf "%s.svg" $icons2}}
+        {{ $param1 := index $.Params 0}}
+        {{ $param2 := index $.Params 1}}
+        {{ if or (eq .title $icons) (eq .name $test) (eq .name $test2) }}
+            <div
+                class="box-tech-stack tech-stack"
+                style="
+                        background-color: {{if (eq .isDark false)}}{{- .color -}}99{{else}}{{- .color -}}50{{end}};
+                        color: {{if (eq .isDark false)}}white{{else}}black{{end}};
+                        /*text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;*/
+                        "
+            >
+                 {{/*        <i class="simpleicons" title="Hugo" style="color: #4FC08D">Hugo</i>*/}}
+            <i class="simpleicons" title="{{if ($param2)}}{{ $param2 }}{{else}}{{ .title }}{{end}}" style="
+                    opacity: 1 !important;
+                    color: {{if (eq .isDark false)}}white{{else}}black{{end}};
+                {{/*color: {{.color}};*/}}
+                        ">
+                    {{if ($param2)}}{{ $param2 }}{{else}}{{ $param1 }}{{end}}
+        </i>
+            {{if (index $.Params 2)}}
+                {{index $.Params 2}}
+            {{else}}
+                {{ .title }}
+            {{end}}
+            </div>
+        {{ end }}
+    {{ end }}
+    <bebe>
+    </bebe>
+</span>
+<!-- GITGET Hugo's way -->
+{{/*{{ $urlPre := "https://api.github.com" }}*/}}
+{{/*{{ $git_user := "userXYZ" }}*/}}
+{{/*{{ $user_json := getJSON $urlPre "/users/" $git_user "/repos" }}*/}}
+{{/*{{ range $user_json }}*/}}
+{{/*    {{ $u := . }}*/}}
+{{/*    <h2>{{ $u.name }}</h2>*/}}
+{{/*    {{ $repo_json := getJSON $urlPre "/repos/" $git_user "/" $u.name }}*/}}
+{{/*    {{ range $k,$v :=   $repo_json }}*/}}
+{{/*        {{ $k }} =&gt; {{ $v }}<br><br>*/}}
+{{/*    {{ end }}*/}}
+{{/*    <hr>*/}}
+{{/*{{ end }}*/}}

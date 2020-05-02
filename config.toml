@@ -50,6 +50,8 @@ disableHugoGeneratorInject = false
   category = "categories"
 
 [params]
+  #Forked By Savero
+  production = false
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"

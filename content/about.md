@@ -29,25 +29,62 @@ to create such intricate way to fool the game, and not wasting my time in a delu
 > _-Muhammad Surga Savero-_
 
 - **First language:**
-    - PHP (2007)
+    - {{< simpleicon PHP >}} (2007)
+    
 - **Well versed in:**
-    - Javascript / Vue (Quasar Framework)
+    - {{< simpleicon javascript >}}{{< simpleicon Vue.js >}}
+    
 - **Experienced with:**
-    - Node / React
-    - Laravel / RoR
     - Delphi RAD (Since Borland to XE)
-    - Bash/Shell
-    - C# (Entity Framework) / Mono 
-    - Express/Strapi/Feather/Moleculer
+    - {{< simpleicon typescript >}}
+    - {{< simpleicon Node.js >}}  {{< simpleicon react >}} 
+    - {{< simpleicon laravel >}}  {{< simpleicon rails >}}
+    - {{< simpleicon gnubash >}} 
+    - {{< simpleicon csharp CSharp >}}
+    - {{< simpleicon Socket.io >}}  {{< simpleicon strapi >}}  {{<simpleicon D3.js>}}
+
 - **Familiar with:** 
-    - Java
-    - Python
+    - Lang: {{< simpleicon java >}}{{< simpleicon python >}}{{< simpleicon ruby >}}{{< simpleicon perl >}}
+    - Man: {{< simpleicon npm >}}{{< simpleicon rubygems >}}{{< simpleicon composer >}}{{< simpleicon pypi >}}
+    
+- **SysAdmin|DevOps**
+    - {{< simpleicon archlinux >}}{{< simpleicon ubuntu >}}  {{< simpleicon CentOS >}}  {{< simpleicon windows>}}
+    - {{< simpleicon docker >}}{{< simpleicon kubernetes >}}
+    - {{< simpleicon microsoftazure >}}{{< simpleicon amazonaws >}}{{< simpleicon heroku >}}
+    - {{< simpleicon apache >}}{{< simpleicon nginx >}}{{< simpleicon letsencrypt >}}
+    - {{< simpleicon glitch >}}{{< simpleicon zeit >}}{{< simpleicon netlify >}}
+    - {{< simpleicon DigitalOcean >}}{{< simpleicon vultr >}}{{< simpleicon redhatopenshift RedHatOpenShift >}}
+    - {{< simpleicon cPanel >}}{{< simpleicon Webmin >}}
 
-- **SysAdmin/DevOps**
-    - Arch/Ubuntu/CoreOS/CentOS
-    - Docker/Kubernetes
-
-Currently fond of **GO LANG**
+- **Etcetera**
+    - {{< simpleicon adobephotoshop >}}{{< simpleicon adobelightroomcc >}}{{< simpleicon inkscape >}}{{< simpleicon figma >}}
+     {{< simpleicon googleanalytics >}}
+     {{< simpleicon postgresql >}}{{< simpleicon redis >}}{{< simpleicon mysql >}}{{< simpleicon mongodb >}}  
+     {{< simpleicon asana >}}{{< simpleicon trello >}}{{< simpleicon slack >}}{{< simpleicon discord >}}
+     {{< simpleicon webpack >}}{{< simpleicon gulp >}}
+     {{< simpleicon GraphQL >}}{{< simpleicon wordpress >}}{{< simpleicon twilio >}}
+     {{< simpleicon Upwork >}}
+     {{< simpleicon fiverr >}}{{< simpleicon stylus >}}{{< simpleicon sass >}}
+     
+- **Personal preferences**
+    - Environment: {{< simpleicon archlinux >}}{{< simpleicon awesomeWM >}}
+    - Frequent stack: {{< simpleicon Vue.js >}}{{< simpleicon Node.js >}}{{< simpleicon strapi >}}
+    {{< simpleicon mongodb >}}{{< simpleicon GraphQL >}}
+    {{< simpleicon JSON >}}{{< simpleicon Hugo >}}  
+    - Design: {{< simpleicon inkscape >}}{{< simpleicon figma >}}
+    - IDE: {{< simpleicon jetbrains >}}{{< simpleicon intellijidea >}}
+    {{< simpleicon webstorm >}}
+    - Deployment: {{< simpleicon serverless>}}{{< simpleicon github >}}{{< simpleicon gitlab >}}
+    {{< simpleicon netlify >}}{{< simpleicon zeit >}}
+    {{< simpleicon heroku >}}{{< simpleicon docker >}}{{< simpleicon firebase >}}
+    
+- **Rigs**
+    - {{< simpleicon intel intel "i5 3500" >}} 
+    {{< simpleicon nvidia nvidia "GeForce GTX 1080 Ti FE" >}}{{< simpleicon LG >}}
+    {{< simpleicon android >}}{{< simpleicon ios >}}{{< simpleicon Logitech >}}
+    {{< simpleicon microsoft microsoft "Microsoft Surface Pro 3" >}}
+    
+Currently fond of {{< simpleicon go >}}**LANG**
 
 ------> ./graphs {#graphs}
 ---

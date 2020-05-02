@@ -52,6 +52,7 @@ disableHugoGeneratorInject = false
 [params]
   #Forked By Savero
   production = false
+  vuexFile = ["global"]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"

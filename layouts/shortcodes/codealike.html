@@ -1,6 +1,11 @@
 <div id="codealike" class="codealike">
+{{/*    <div class="w3-border" v-for="(js, i) in wakatime.data" :key="i">*/}}
+{{/*        <div class="w3-grey w3-padding" :style="`height:24px;width:${js.percent*100/100}%`">*/}}
+{{/*                <% js.name %> (<% js.percent %>)*/}}
+{{/*        </div>*/}}
+{{/*    </div>*/}}
     <collapsible class="fig">
-        <slot slot="title">Coding Activity (over Last 30 Days)</slot>
+        <span slot="title">Coding Activity (Last 30 Days)</span>
         <div>
             <figure>
                 <embed src="https://wakatime.com/share/@saveroo/5b955279-dfda-430b-a6c7-164642d0f299.svg"></embed>
@@ -8,7 +13,7 @@
         </div>
     </collapsible>
     <collapsible class="fig">
-        <slot slot="title">Languages (over Last 30 Days)</slot>
+        <span slot="title">Languages (Last 30 Days)</span>
         <div>
             <figure>
                 <embed src="https://wakatime.com/share/@saveroo/ccaf1f57-073a-4ede-9c2f-76ff91f0d51f.svg"></embed>
@@ -16,7 +21,7 @@
         </div>
     </collapsible>
     <collapsible class="fig">
-        <slot slot="title">Editor (over Last 30 Days)</slot>
+        <span slot="title">Editor (Last 30 Days)</span>
         <div>
             <figure>
                 <embed src="https://wakatime.com/share/@saveroo/43768f87-89e1-467b-b6d1-6e7f7b3d604e.svg"></embed>
@@ -24,7 +29,7 @@
         </div>
     </collapsible>
     <collapsible class="fig">
-        <slot slot="title">OS (All time)</slot>
+        <span slot="title">OS (All time)</span>
         <div>
             <figure>
                 <embed src="https://wakatime.com/share/@saveroo/1fe725c5-cf25-4eab-8528-7b03aed5e66d.svg"></embed>
@@ -32,7 +37,7 @@
         </div>
     </collapsible>
     <collapsible class="fig">
-        <slot slot="title">Codealike Stats</slot>
+        <span slot="title">Codealike Stats</span>
         <div>
             <iframe frameborder='0' height='370px' marginheight='0'
                     marginwidth='0' scrolling='no'
@@ -42,77 +47,3 @@
         </div>
     </collapsible>
 </div>
-
-<script>
-  window.quasarConfig = {
-    brand: { // this will NOT work on IE 11
-      // primary: '#e46262',
-      // ... or all other brand colors
-    },
-    // notify: {...}, // default set of options for Notify Quasar plugin
-    // loading: {...}, // default set of options for Loading Quasar plugin
-    // loadingBar: { ... }, // settings for LoadingBar Quasar plugin
-    // ..and many more (check Installation card on each Quasar component/directive/plugin)
-  }
-</script>
-<script>
-  Vue.component("collapsible", {
-    template: `
-    <div class="collapsible-wrapper">
-     <div class="collapsible"><slot name="title"></slot></div>
-    <div class="contentd">
-        <slot></slot>
-    </div>
-    </div>
-  `,
-    props: ['title'],
-    data: () => ({
-      display: 'none',
-      active: false,
-      maxHeight: '0px'
-    }),
-    mounted() {
-      this.oc();
-    },
-    methods: {
-      oc() {
-        var coll = document.getElementsByClassName("collapsible");
-        for (let i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", () => {
-            coll[i].classList.toggle("active");
-            let content = coll[i].nextElementSibling;
-            if (content.style.maxHeight) {
-              content.style.maxHeight = null
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          })
-        }
-      },
-      openClose() {
-        // let containerHeight = this.$el.querySelector('.accordion-content').offsetHeight;
-        // if (this.active) {
-        //   this.maxHeight = '0px';
-        // } else {
-        //   this.maxHeight = containerHeight + 32 + 'px';
-        // }
-        // this.active = !this.active;
-        // let containerHeight = this.$el.querySelector('.contentd').offsetHeight;
-        // if (this.active) {
-        //   this.maxHeight = '0px';
-        // } else {
-        //   this.maxHeight = containerHeight + 32 + 'px';
-        // }
-        // this.active = !this.active;
-      }
-    }
-  });
-  new Vue({
-    el: '#codealike',
-    data: function () {
-      return {}
-    },
-    methods: {},
-    // ...etc
-  })
-</script>

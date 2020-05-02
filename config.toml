@@ -54,6 +54,7 @@ disableHugoGeneratorInject = false
   production = false
   vuexFile = ["global"]
   vueComponents = ["bebe", "collapsible", "GithubActivity", "GetGist"]
+  vueGlobalState = [""]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"

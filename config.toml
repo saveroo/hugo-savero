@@ -1,6 +1,6 @@
-baseURL = "https://saveroo.netlify.com/"
+baseURL = "https://saveroo.netlify.app/"
 #baseURL = "http://127.0.0.1:800"
-#baseURL = "http://192.168.12.1:1313"
+#baseURL = "http://192.168.12.1:2222"
 title   = "Hello Friend..."
 
 DefaultContentLanguage = "en"

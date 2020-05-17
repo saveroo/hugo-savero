@@ -13,7 +13,7 @@ One of the solution was to keep the files somewhere where you can access and dir
 
 So I tried to hack it myself with my way
 
-Here's what I've done to download Google Drive Files to my server:
+##### Here's what I've done to download Google Drive Files to my server:
 
 1. Go to the **link of file** you want to download and **Inspect Element,**
 2. Click **"DOWLOAD ANYWAY"** button while you're on the **Network Tab** of *Inspect Window*
@@ -26,27 +26,29 @@ Here's what I've done to download Google Drive Files to my server:
 
    for UNIX:
 
-   `Right-click > Copy > Copy all as curl (bash)`
+   > `Right-click > Copy > Copy all as curl (bash)`
 
    for Windows:
 
-   `Right-click > Copy > Copy all as curl (cmd)`
+   > `Right-click > Copy > Copy all as curl (cmd)`
 
    ![Copy as CURL](/img/gdrive3.png "You can even copy as NodeJS fetch")
 5. In your (Unix) server, type **paste** the copied curl to a file, with 
 
-   ~$`nano gdrive` 
+   > ~$nano gdrive 
 
-   or paste into terminal 
+   or paste into terminal:
 
-   `~$"paste here" > gdrive` 
+   > `~$"paste here" > gdrive` 
 
    (this will relocate the content you paste to a file) 
 6. after the copy pasted command was there on the file, type 
 
-   `~$ sh ./gdrive > [filename.ext]`, 
+   > `~$ sh ./gdrive > [filename.ext]`, 
 
    this will write the buffered stream to a file name and extension of your choice.
+
+
 
 So in example if I want to download **test.rar**, then i would do `~$ sh ./pastedcurl > test.rar`, 
 

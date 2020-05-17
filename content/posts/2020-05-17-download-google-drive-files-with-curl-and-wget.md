@@ -1,9 +1,11 @@
 ---
-title: "Download <simpleicons JavaScript /> Google Drive Files with CURL and WGET "
+title: "Download Google Drive Files with CURL and WGET "
 date: 2020-05-17T01:26:01.871Z
 description: A Method to download Google Drive Files to your server with WGET / CURL
 ---
 I need to mirror some *Public Google Drive Files* to my server, since i got slow connection, sometimes the files which I tried to download can't get resumed if something happened during the process, 
+
+<simpleicons javascript />
 
 It was real pain to re-download it from the beginning, what a mood-breaking moment.
 
@@ -19,7 +21,7 @@ Here's what I've done to download Google Drive Files to my server:
    ![Google Drive Inspect Element](/img/gdrive1.png "https://drive.google.com/u/0/uc?id=[FILE_ID]&export=download")
 3. There are few request on server made by the click you triggered, find the one where the **"Content-Type"** header match the file you tried to download, as example ("*Application/binary*") ("*Application/x-rar"*)
 
-   ![Network Request MIME Type](/img/gdrive2.png "1. There are few request on server made by the click you triggered, find the one where the **\\"Content-Type\\"** header match the file you tried to download, as example (\\"*Application/binary*\\") (\\"*Application/x-rar\\"*)")
+   ![Network Request MIME Type](/img/gdrive2.png "1. There are few request on server made by the click you triggered, find the one where the **\\\"Content-Type\\\"** header match the file you tried to download, as example (\\\"*Application/binary*\\\") (\\\"*Application/x-rar\\\"*)")
 4. After you found the right *Link Server Request* which has the right Content/MIME type as your file, 
 
    for UNIX:
@@ -45,8 +47,6 @@ Here's what I've done to download Google Drive Files to my server:
    `~$ sh ./gdrive > [filename.ext]`, 
 
    this will write the buffered stream to a file name and extension of your choice.
-
-
 
 So in example if I want to download **test.rar**, then i would do `~$ sh ./pastedcurl > test.rar`, 
 

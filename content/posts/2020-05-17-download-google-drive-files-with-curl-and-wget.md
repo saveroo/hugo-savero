@@ -1,5 +1,5 @@
 ---
-title: "Download <simpleicons JavaScript > Google Drive Files with CURL and WGET "
+title: "Download <simpleicons JavaScript /> Google Drive Files with CURL and WGET "
 date: 2020-05-17T01:26:01.871Z
 description: A Method to download Google Drive Files to your server with WGET / CURL
 ---

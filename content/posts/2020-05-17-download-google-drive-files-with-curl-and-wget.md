@@ -21,7 +21,7 @@ Here's what I've done to download Google Drive Files to my server:
    ![Google Drive Inspect Element](/img/gdrive1.png "https://drive.google.com/u/0/uc?id=[FILE_ID]&export=download")
 3. There are few request on server made by the click you triggered, find the one where the **"Content-Type"** header match the file you tried to download, as example ("*Application/binary*") ("*Application/x-rar"*)
 
-   ![Network Request MIME Type](/img/gdrive2.png "1. There are few request on server made by the click you triggered, find the one where the **\\\"Content-Type\\\"** header match the file you tried to download, as example (\\\"*Application/binary*\\\") (\\\"*Application/x-rar\\\"*)")
+   ![Network Request MIME Type](/img/gdrive2.png "Server Request of the file")
 4. After you found the right *Link Server Request* which has the right Content/MIME type as your file, 
 
    for UNIX:

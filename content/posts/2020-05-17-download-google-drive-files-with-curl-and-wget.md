@@ -5,7 +5,7 @@ description: A Method to download Google Drive Files to your server with WGET / 
 ---
 I need to mirror some *Public Google Drive Files* to my server, since i got slow connection, sometimes the files which I tried to download can't get resumed if something happened during the process, 
 
-<simpleicons javascript />
+< simpleicon javascript />
 
 It was real pain to re-download it from the beginning, what a mood-breaking moment.
 

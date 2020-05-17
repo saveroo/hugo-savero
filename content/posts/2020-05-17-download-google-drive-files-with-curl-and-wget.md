@@ -1,7 +1,7 @@
 ---
 title: Download Google Drive Files with CURL and WGET (2020)
 date: 2020-05-17T01:26:01.871Z
-description: A Method to download Google Drive Files to your server with WGET / CURL
+description: A method to download Google Drive Files to your server with WGET / CURL
 ---
 {{< simpleicon googledrive >}} > {{< simpleicon linux >}} 
 

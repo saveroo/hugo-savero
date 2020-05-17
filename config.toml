@@ -55,7 +55,7 @@ disableHugoGeneratorInject = false
 
 [params]
   #Forked By Savero
-  production = false
+  production = true
   vuexFile = ["global"]
   vueComponents = ["bebe", "collapsible", "GithubActivity", "GetGist"]
   vueGlobalState = [""]

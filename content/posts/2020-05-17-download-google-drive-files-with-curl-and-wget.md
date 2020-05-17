@@ -3,11 +3,13 @@ title: "Download Google Drive Files with CURL and WGET "
 date: 2020-05-17T01:26:01.871Z
 description: A Method to download Google Drive Files to your server with WGET / CURL
 ---
-I need to mirror some Public Google Drive Files to my server, since i got slow connection, sometimes the files which I tried to download can't get resumed if something happens during the process, so i need to re-download it from the beginning, that was mood-breaking moment, 
+I need to mirror some *Public Google Drive Files* to my server, since i got slow connection, sometimes the files which I tried to download can't get resumed if something happened during the process, 
 
-One of the way was to keep the files somewhere where you can access and direct download it with full speed, I've been googling for a while, and i couldn't found a way which 'still' works.
+It was real pain to re-download it from the beginning, what a mood-breaking moment.
 
-Up until I found an easy way,
+One of the solution was to keep the files somewhere where you can access and direct download it with full speed, I've been googling for a while, and i couldn't found a way which 'still' works.
+
+So I tried to hack it myself with my way
 
 Here's what I've done to download Google Drive Files to my server:
 
@@ -17,7 +19,7 @@ Here's what I've done to download Google Drive Files to my server:
    ![Google Drive Inspect Element](/img/gdrive1.png "https://drive.google.com/u/0/uc?id=[FILE_ID]&export=download")
 3. There are few request on server made by the click you triggered, find the one where the **"Content-Type"** header match the file you tried to download, as example ("*Application/binary*") ("*Application/x-rar"*)
 
-   ![Network Request MIME Type](/img/gdrive2.png "1. There are few request on server made by the click you triggered, find the one where the **\"Content-Type\"** header match the file you tried to download, as example (\"*Application/binary*\") (\"*Application/x-rar\"*)")
+   ![Network Request MIME Type](/img/gdrive2.png "1. There are few request on server made by the click you triggered, find the one where the **\\"Content-Type\\"** header match the file you tried to download, as example (\\"*Application/binary*\\") (\\"*Application/x-rar\\"*)")
 4. After you found the right *Link Server Request* which has the right Content/MIME type as your file, 
 
    for UNIX:

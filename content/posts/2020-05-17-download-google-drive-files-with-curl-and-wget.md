@@ -31,8 +31,22 @@ Here's what I've done to download Google Drive Files to my server:
    `Right-click > Copy > Copy all as curl (cmd)`
 
    ![Copy as CURL](/img/gdrive3.png "You can even copy as NodeJS fetch")
-5. In your (Unix) server, type **paste** the copied curl to a file, with `nano gdrive` or paste into terminal `"pasted curl" > gdrive`  
-6. after the copy pasted command was there on the file, type `~$ sh ./gdrive > [filename.ext]`, this will write the buffered stream to a file name and extension of your choice.
+5. In your (Unix) server, type **paste** the copied curl to a file, with 
+
+   ~$`nano gdrive` 
+
+   or paste into terminal 
+
+   `~$"paste here" > gdrive` 
+
+   (this will relocate the content you paste to a file) 
+6. after the copy pasted command was there on the file, type 
+
+   `~$ sh ./gdrive > [filename.ext]`, 
+
+   this will write the buffered stream to a file name and extension of your choice.
+
+
 
 So in example if I want to download **test.rar**, then i would do `~$ sh ./pastedcurl > test.rar`, 
 

@@ -17,6 +17,7 @@ name = "Muhammad Surga Savero"
 ------> ./intro {#intro}
 ---
 ---
+You can call me Surga / Savero.
 
 - **First language:**
     - {{< simpleicon PHP >}}

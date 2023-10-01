@@ -17,19 +17,9 @@ name = "Muhammad Surga Savero"
 ------> ./intro {#intro}
 ---
 ---
-I was born under the name of *Muhammad Surga Savero*, 
-from my early childhood i was fond of games, technology,
-things keep repeating in my head, how it's done, how it was built,
-until one day i grind a lot, and someone else achieve the same result or surpassing as i was without doing lots of work,
-turns out he's cheating the game, that was how my passion start, i decide one day i'll learn
-to create such intricate way to fool the game, and not wasting my time in a delusional loop of grinding
-
-> "well.. now i could consider myself as a developer"
->
-> _-Muhammad Surga Savero-_
 
 - **First language:**
-    - {{< simpleicon PHP >}} (2007)
+    - {{< simpleicon PHP >}}
     
 - **Well versed in:**
     - {{< simpleicon javascript >}}{{< simpleicon Vue.js >}}
